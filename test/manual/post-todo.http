@@ -1,0 +1,6 @@
+POST {{url_base}}/api/v1/todo
+content-type: application/json
+
+{
+  "title": "hello"
+}
