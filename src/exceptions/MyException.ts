@@ -1,15 +1,15 @@
 export const myExceptionTypes = [
-  'invalid_input_params',
-  'route_no_found',
-  'unknown_issue'
+  'INVALID_INPUT_PARAMS',
+  'ROUTE_NO_FOUND',
+  'UNKNOWN_ISSUE'
 ] as const
 
 export type MyExceptionType = typeof myExceptionTypes[number]
 
 const issueTypeToStatusCode: Record<MyExceptionType, number> = {
-  invalid_input_params: 400,
-  route_no_found: 404,
-  unknown_issue: 500
+  INVALID_INPUT_PARAMS: 400,
+  ROUTE_NO_FOUND: 404,
+  UNKNOWN_ISSUE: 500
 }
 
 export class MyException extends Error {

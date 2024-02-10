@@ -21,7 +21,7 @@ app.use('/api/v1/todo', todoRouter)
 
 app.get('*', (req, res, next) => {
   try {
-    throw new MyException('route_no_found', `Can't find ${req.url}`)
+    throw new MyException('ROUTE_NO_FOUND', `Can't find ${req.url}`)
   } catch (error) {
     next(error)
   }

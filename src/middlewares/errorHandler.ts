@@ -4,7 +4,7 @@ import { MyException } from '../exceptions/MyException.js'
 export function errorHandler (error: unknown, req: Request, res: Response, next: NextFunction): void {
   const err = (error instanceof MyException)
     ? error
-    : new MyException('unknown_issue')
+    : new MyException('UNKNOWN_ISSUE')
 
   const resBody = {
     status: err.status,
