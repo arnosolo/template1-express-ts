@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import { todoRouter } from './routers/todoRouter.js'
+import { todoRouter } from './routes/todoRoutes.js'
 import { MyException } from './exceptions/MyException.js'
 import { errorHandler } from './middlewares/errorHandler.js'
 import { printIncoming } from './middlewares/printIncoming.js'
