@@ -1,5 +1,5 @@
 import { type NextFunction, type Request, type Response } from 'express'
-import { MyException } from '../exceptions/MyException.js'
+import { MyException } from '../exceptions/MyException'
 
 export function errorHandler (error: unknown, req: Request, res: Response, next: NextFunction): void {
   const err = (error instanceof MyException)

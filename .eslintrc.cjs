@@ -14,6 +14,9 @@ module.exports = {
       // 'test/tsconfig.json'
     ]
   },
+  ignorePatterns: [
+    'jest.config.cjs'
+  ],
   rules: {
     quotes: ['error', 'single'],
     '@typescript-eslint/explicit-function-return-type': 'warn',

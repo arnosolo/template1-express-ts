@@ -1,9 +1,9 @@
 import express from 'express'
 import cors from 'cors'
-import { todoRouter } from './routes/todoRoutes.js'
-import { MyException } from './exceptions/MyException.js'
-import { errorHandler } from './middlewares/errorHandler.js'
-import { printIncoming } from './middlewares/printIncoming.js'
+import { todoRouter } from './routes/todoRoutes'
+import { MyException } from './exceptions/MyException'
+import { errorHandler } from './middlewares/errorHandler'
+import { printIncoming } from './middlewares/printIncoming'
 
 const MAX_REQUEST_BODY_SIZE = '12MB'
 

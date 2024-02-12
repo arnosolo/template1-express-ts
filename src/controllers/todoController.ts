@@ -1,6 +1,6 @@
 import type { NextFunction, Request, Response } from 'express'
-import type { TodoModel } from '../models/TodoModel.js'
-import { MyException } from '../exceptions/MyException.js'
+import type { TodoModel } from '../models/TodoModel'
+import { MyException } from '../exceptions/MyException'
 
 const getAll = async (req: Request, res: Response, next: NextFunction) => {
   try {
